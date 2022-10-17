@@ -1,5 +1,4 @@
 header {
-    margin-top: 5rem;
     border: 1px solid black;
     background-color: #245486; /* Dark blue used on GoSchoolBox website */
     opacity: 1;
@@ -8,7 +7,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-top: 2.5rem;
+    padding-top: 1rem;
     padding-left: 1rem;
 }
 
@@ -40,20 +39,31 @@ ul {
 }
 
 li {
-    color: #999;
+    
     list-style: none;
     text-align: left;
     display: inline-block;
     margin: 0 10px;
     font-size: 18px;
 }
+li a {
+    text-decoration: none;
+    color: #999;
+}
 li a:hover {
     color: white;
-    border-bottom: 3px solid white;
+    
 }
 
-li button {
+.headerButton {
     font-size: 18px;
+    color: white;
     padding: 5px 15px;
     border-radius: 15px 15px 15px 15px;
+    background-color: #60bff7;
+}
+
+.headerButton:hover {
+    border-bottom: none;
+    background-color: #78C9F8;
 }

@@ -21,7 +21,6 @@ const App = () => {
   function calculate() {
     /* https://medium.com/@stoopidguy1992/how-to-write-a-math-expression-parser-in-javascript-b5147bc9466b */
     setScreen([Function(`'use strict'; return (${screen.join('')})`)()])
-    /* Refresh Screen */
   }
 
   function changeSign() {
@@ -38,7 +37,6 @@ const App = () => {
 
   /* Return App */
   return (
-    <body>
       <main>
         <Container>
           <Screen value={screen.join('')}>
@@ -72,7 +70,6 @@ const App = () => {
           </ButtonBox>
         </Container>
       </main>
-    </body>
   )
 }
 
