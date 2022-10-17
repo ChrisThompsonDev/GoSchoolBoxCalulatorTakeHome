@@ -1,15 +1,13 @@
 /* import { Textfit } from "react-textfit" */
 import "./screen.css"
 
-const Screen = ({ value }) => {
+const Screen = (props) => {  
     return (
         <div className="screen" mode="single" max={70}>
-            {/* {value.map(item => {
-                return <a>{item[0]}</a>;
-            })} */}
-            {value.join('')}
+            {props.value}
         </div>
     )
 }
+
 
 export default Screen
