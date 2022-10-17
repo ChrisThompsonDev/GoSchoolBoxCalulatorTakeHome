@@ -24,12 +24,16 @@ const App = () => {
     /* Refresh Screen */
   }
 
+  function changeSign() {
+    setScreen([Function(`'use strict'; return -(${screen.join('')})`)()])
+  }
+
   function clearScreen() {
     setScreen([0])
   }
 
   function deleteFromScreen() {
-    setScreen([screen.slice(0, -1).join('')])
+    setScreen([screen.slice(0, -1)])
   }
 
   /* Return App */
@@ -61,7 +65,7 @@ const App = () => {
             <Button className="button sign clear" value="C" onClick={() => clearScreen('C')}></Button>
             <Button className="button" value="0" onClick={() => sendToScreen('0')}></Button>
             <Button className="button" value="." onClick={() => sendToScreen('.')}></Button>
-            <Button className="button" value="+/-" onClick={() => sendToScreen('+/-')}></Button>
+            <Button className="button" value="+/-" onClick={() => changeSign()}></Button>
             <Button className="button sign" value="+" onClick={() => sendToScreen('+')}></Button>
 
             <Button className="button equals" value="=" onClick={() => calculate()}></Button>
