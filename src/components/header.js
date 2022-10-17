@@ -13,7 +13,7 @@ const Header = () => {
                     <li><a href="https://goschoolbox.com/about/">About</a></li>
                     <li><a href="https://goschoolbox.com/team/">Our Team</a></li>
                     <li><a href="https://goschoolbox.com/contact/">Contact</a></li>
-                    <li><a href="https://goschoolbox.com/all-in-one-solution/" class="headerButton">See It Live</a></li>
+                    <li><a href="https://goschoolbox.com/all-in-one-solution/" className="headerButton">See It Live</a></li>
                 </ul>
             </div>
             <div id="calculator">Calculator</div>
