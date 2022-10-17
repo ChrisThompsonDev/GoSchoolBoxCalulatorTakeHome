@@ -1,0 +1,52 @@
+button {
+    border: none;
+    background-color: #60bff7; /* Button background on GoSchoolBox website */
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+}
+.button {
+    width: 15%;
+    margin: 5% 2%;
+    padding: 2%;
+}
+
+button:hover {
+    background-color: #78C9F8; /* Button hover color on GoSchoolBox website */
+}
+
+.sign {
+    color: black;
+    background-color: rgb(187, 187, 187);
+    border-radius: 50%;
+}
+
+.sign:hover {
+    background: rgb(239, 239, 239);
+}
+
+.clear {
+    background-color: orange;
+}
+
+.clear:hover {
+    background-color: rgb(255, 204, 108);
+}
+
+.equals {
+    grid-column: 3 / 5;
+    color: #245486; 
+    background-color: white;
+    border: 3px solid #60bff7;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.equals:hover {
+    color: white;
+    background-color: #78C9F8;
+    border: 3px solid #245486;
+}
