@@ -40,13 +40,13 @@ const App = () => {
           <Screen value={screen.join('')}>
           </Screen>
           <ButtonBox>
-            <Button className="button sign" value="%" onClick={() => sendToScreen('%')}></Button>
+            <Button className="button sign" value="(" onClick={() => sendToScreen('(')}></Button>
             <Button className="button" value="7" onClick={() => sendToScreen('7')}></Button>
             <Button className="button" value="8" onClick={() => sendToScreen('8')}></Button>
             <Button className="button" value="9" onClick={() => sendToScreen('9')}></Button>
             <Button className="button sign" value="÷" onClick={() => sendToScreen('/')}></Button>
 
-            <Button className="button sign" value="√" onClick={() => sendToScreen('√')}></Button>
+            <Button className="button sign" value=")" onClick={() => sendToScreen(')')}></Button>
             <Button className="button" value="4" onClick={() => sendToScreen('4')}></Button>
             <Button className="button" value="5" onClick={() => sendToScreen('5')}></Button>
             <Button className="button" value="6" onClick={() => sendToScreen('6')}></Button>
