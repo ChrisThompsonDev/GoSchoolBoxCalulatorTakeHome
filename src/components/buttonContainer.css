@@ -1,12 +1,3 @@
-/* .buttonContainer {
-    width: 100%;
-    height: calc(100% - 110px);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 10px;
-} */
-
 .buttonContainer {
     display: flex;
     justify-content: space-around;
