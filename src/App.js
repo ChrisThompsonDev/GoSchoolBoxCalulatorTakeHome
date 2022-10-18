@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 
 import Container from "./components/container"
@@ -8,23 +8,24 @@ import Button from "./components/button"
 
 const App = () => {
   /* Functions */
-  const [screen, setScreen] = useState([0])
+  const [numbers, setScreen] = useState([0])
 
   function sendToScreen(input) {
-    if (screen[0] === 0) {
+    if (numbers[0] === 0) {
       setScreen([input])
     } else {
-      setScreen([...screen, input])
+      setScreen([...numbers, input])
     }
+    console.log(numbers)
   }
 
   function calculate() {
     /* https://medium.com/@stoopidguy1992/how-to-write-a-math-expression-parser-in-javascript-b5147bc9466b */
-    setScreen([Function(`'use strict'; return (${screen.join('')})`)()])
+    setScreen([Function(`'use strict'; return (${numbers.join('')})`)()])
   }
 
   function changeSign() {
-    setScreen([Function(`'use strict'; return -(${screen.join('')})`)()])
+    setScreen([Function(`'use strict'; return -(${numbers.join('')})`)()])
   }
 
   function clearScreen() {
@@ -32,14 +33,15 @@ const App = () => {
   }
 
   function deleteFromScreen() {
-    setScreen([screen.slice(0, -1)])
+    setScreen([...numbers.slice(0, -1)])
+    console.log(numbers)
   }
 
   /* Return App */
   return (
       <main>
         <Container>
-          <Screen value={screen.join('')}>
+          <Screen value={numbers.join('')}>
           </Screen>
           <ButtonBox>
             <Button className="button sign" value="(" onClick={() => sendToScreen('(')}></Button>
